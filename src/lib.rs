@@ -134,7 +134,7 @@ macro_rules! nonempty {
     ($h:expr) => {
         $crate::NonEmpty {
             head: $h,
-            tail: alloc::vec::Vec::new(),
+            tail: vec![],
         }
     };
 }
